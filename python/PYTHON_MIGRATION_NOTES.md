@@ -6,7 +6,7 @@
 - Mathematica `StateθφInitial[θ,φ]` -> `vpc.core.css_state(I, theta, phi)` using the same rotation convention.
 - Mathematica `Hmuti[φ1,...]` -> `vpc.core.h_vpc(I, phases)`.
 - `MatrixExp[-I H t] . state` -> `vpc.core.unitary_state` or the exact fast `vpc_state_fast` implementation.
-- KU squeezing -> `xi_ku` with the revised manuscript normalization `2 Var_min/I`.
+- KU squeezing -> `xi_ku` with the normalization used in the present calculations `2 Var_min/I`.
 - Wineland squeezing -> `xi_wineland` with `2 I Var_min/|<I>|^2`.
 - Mathematica master-equation calculations -> explicit Lindblad superoperator in `evolve_lindblad`.
 - Mathematica fidelity calculation -> `fidelity`.
@@ -23,7 +23,7 @@ for a diagonal phase matrix D. Therefore the Python optimizer evaluates
 
 instead of calling a fresh matrix exponential at every objective evaluation. This is an exact algebraic identity, not an approximation. `scripts/validate_core.py` verifies it against direct `expm(-i H_VPC t)` for all three spins with errors around 1e-16.
 
-## Reviewer 2 changes
+## TACT benchmark and related updates
 
 - TACT comparison is recomputed with the polar `CSS_z=|I,I>` initial state.
 - Fig. 2: corrected TACT(CSS_z) is included together with the old CSS_y curve for transparency.
