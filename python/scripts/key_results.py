@@ -4,7 +4,7 @@ import sys,csv,json
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from vpc.core import *
 OUT=Path(__file__).resolve().parents[1]/'results'
-# Times chosen from the revised manuscript / Python optimization neighborhoods.
+# Representative target times used in the reported calculations / Python optimization neighborhoods.
 ku_targets={1.5:0.534,2.5:1.223,3.5:1.119}
 wr_targets={1.5:0.54,2.5:1.40,3.5:1.10}
 rows=[]; details={}
