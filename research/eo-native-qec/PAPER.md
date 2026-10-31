@@ -54,7 +54,7 @@ $$
 
 on the encoded input, with no nominal leakage and a gauge-independent action. Merely matching the expectation value $\langle S\rangle$ is insufficient. Conditional branch phases are permissible when known and physically immaterial for the measured parity.
 
-![Proposed six-EO, 18-spin planar graph for the flagged rotated-X check. Blocks D1--D4 carry data; S is the syndrome EO; F is the flag EO. Lines depict the physical nearest-neighbor geometry, not a fabricated chip.](figures/eo_flag_geometry.png){ width=77% }
+![Proposed six-EO, 18-spin planar graph for the flagged rotated-X check. Blocks D1--D4 carry data; S is the syndrome EO; F is the flag EO. Lines depict the physical nearest-neighbor geometry, not a fabricated chip.](figures/eo_flag_geometry.svg){ width=77% }
 
 # 3. Native constructions and resource accounting
 
@@ -125,7 +125,7 @@ Each $\delta_b$ persists across the **entire three-check history**, and the cand
 | Pulse count | **276** | 324 |
 | ASAP depth proxy, excluding measurements | **132** | 148 |
 
-![Comparison of conditioned encoded logical error and acceptance for the two three-check histories. Data are a limited model simulation with 50 paired static-gain draws, not a device measurement or decoded QEC threshold.](figures/three_check_comparison.png){ width=90% }
+![Comparison of conditioned encoded logical error and acceptance for the two three-check histories. Data are a limited model simulation with 50 paired static-gain draws, not a device measurement or decoded QEC threshold.](figures/three_check_comparison.svg){ width=90% }
 
 The flagged candidate reduces accepted-conditioned encoded logical error from $6.68235\times10^{-4}$ to $3.74410\times10^{-4}$, a **43.97% relative reduction**. A 5,000-resample paired bootstrap gave a **model-conditional sampling** interval of approximately 36.1--51.4% for that relative reduction. This interval does not cover experimental calibration, modeling errors or untested gauge settings. Acceptance falls from 88.70% to 86.24%, and pulse-cost per accepted history rises by approximately 20.7%. Including readout and reset time may change the ranking further.
 

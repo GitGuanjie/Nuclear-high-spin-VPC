@@ -1,0 +1,34 @@
+name: Build EO-native QEC PDF
+on:
+  push:
+    branches:
+      - research/eo-native-qec-working-paper-2026-11
+    paths:
+      - "research/eo-native-qec/PAPER.md"
+      - "research/eo-native-qec/figures/**"
+      - ".github/workflows/eo-native-qec-pdf.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install scientific PDF toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended librsvg2-bin
+      - name: Typeset paper
+        run: |
+          cd research/eo-native-qec
+          pandoc PAPER.md -o PAPER.pdf --pdf-engine=xelatex --resource-path=. -V geometry:margin=0.85in -V fontsize=10pt -V mainfont="DejaVu Serif"
+      - name: Commit generated PDF back to research branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/eo-native-qec/PAPER.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "docs: render EO-native QEC paper PDF [skip ci]"
+            git push
+          fi
