@@ -1,0 +1,10 @@
+step,bond,area_a,angle_rad,control,note
+1,J12,0.50970203796658109,1.6012761779955569,strict_positive_exchange,chronological
+2,J23,1.6560737858270371,5.2027092393568566,strict_positive_exchange,chronological
+3,J12,0.58702960463331721,1.8442078933557502,strict_positive_exchange,chronological
+4,J23,1.0753519067696664,3.3783176503313599,strict_positive_exchange,chronological
+5,J12,1.2322456379788795,3.8712138436925159,strict_positive_exchange,chronological
+6,J23,1.2783657941308155,4.0161045874418519,strict_positive_exchange,chronological
+7,J12,1.5373333432947554,4.8296751374134388,strict_positive_exchange,chronological
+8,J23,1.1869540339903237,3.7289260733327705,strict_positive_exchange,chronological
+9,J12,1.0519673530382012,3.3048529081211133,strict_positive_exchange,chronological

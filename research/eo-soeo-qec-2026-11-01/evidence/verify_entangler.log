@@ -1,0 +1,51 @@
+43P full code target Fro 8.924003669005109e-15 leakage 1.7723059303343797e-15
+41P full code target Fro 8.312647406381769e-15 leakage 1.7487092142320346e-15
+Full physical 64D U difference: 1.6815196598444982e-15
+PASS 43P->41P exact rewrite on ALL physical states, 6-spin rotated CZ gauge identity.
+{
+  "name": "CZ_41P_REWRITE.csv",
+  "n_pulses": 41,
+  "total_area_pi": 41.0,
+  "phase": "(0.9999999999999997-2.01814707357872e-15j)",
+  "endpoint_target_fro": 2.1651800122684612e-15,
+  "leak_nominal_fro": 1.7487092142320346e-15,
+  "target": "rotated CZ reflection I-2|v,v><v,v|, v=(sqrt3/2,1/2), identity on gauge",
+  "per_bond": {
+    "12": {
+      "occurrences": 6,
+      "scalar_phase_derivative": 9.032078879070653,
+      "logic_gauge_tangent_fro": 23.39164466838266,
+      "leakage_tangent_fro": 8.934483468847372,
+      "mean_square_tangent": 39.18712719668637
+    },
+    "34": {
+      "occurrences": 12,
+      "scalar_phase_derivative": 12.327847189601695,
+      "logic_gauge_tangent_fro": 18.257083876356596,
+      "leakage_tangent_fro": 14.15474523784279,
+      "mean_square_tangent": 33.35487027603457
+    },
+    "23": {
+      "occurrences": 10,
+      "scalar_phase_derivative": 12.31098851757116,
+      "logic_gauge_tangent_fro": 13.973102068981506,
+      "leakage_tangent_fro": 13.836886732735936,
+      "mean_square_tangent": 24.169188492796188
+    },
+    "45": {
+      "occurrences": 9,
+      "scalar_phase_derivative": 8.614713232018278,
+      "logic_gauge_tangent_fro": 14.77375721786264,
+      "leakage_tangent_fro": 8.684875521351625,
+      "mean_square_tangent": 18.35568532210757
+    },
+    "56": {
+      "occurrences": 4,
+      "scalar_phase_derivative": 4.849705965295403,
+      "logic_gauge_tangent_fro": 9.387817520020612,
+      "leakage_tangent_fro": 7.9825613058878195,
+      "mean_square_tangent": 9.490775174466462
+    }
+  },
+  "sum_mean_square_tangent": 124.55764646209116
+}
